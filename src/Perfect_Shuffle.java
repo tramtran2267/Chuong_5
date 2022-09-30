@@ -10,9 +10,9 @@ public class Perfect_Shuffle {
     public static int nhapN(Scanner scan){
         int n;
         do{
-            System.out.println("Enter n > 0: ");
+            System.out.println("Enter n > 2 (n mod 2 = 0): ");
             n = Integer.parseInt(scan.nextLine());
-        }while (n<1);
+        }while (n<2 || n%2 != 0);
         return n;
     }
 
