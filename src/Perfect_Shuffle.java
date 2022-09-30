@@ -30,4 +30,14 @@ public class Perfect_Shuffle {
         }
         System.out.println("\n");
     }
+
+    public static int[] shuffle(int a[]){
+        int temp[] = new int[a.length];
+        for (int i=0; i<a.length/2; i++){
+            temp[2*i] = a[i];
+            temp[2*i + 1] = a[a.length/2 + i];
+        }
+        a = temp;
+        return a;
+    }
 }
